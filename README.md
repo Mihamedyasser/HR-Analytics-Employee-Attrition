@@ -1,29 +1,48 @@
 # HR Analytics — Employee Attrition Analysis
 
-## Objective
-Explore employee attrition patterns in a public, synthetic HR dataset and communicate findings using Python, SQL Server, and Power BI.
+## Project Overview
+This project analyzes employee attrition patterns using Python, SQL Server, and Power BI to identify workforce trends and generate useful insights.
 
 ## Dataset
-`WA_Fn-UseC_-HR-Employee-Attrition.csv` (1,470 rows, 35 columns). This is a sample/training dataset, not a record of a real employer's employees. Check the dataset page and terms before redistributing the raw file.
+- 1,470 employee records
+- 35 columns
+- IBM HR Analytics Employee Attrition dataset
 
-## Questions
-1. What is the overall attrition rate?
-2. How does attrition vary by department and job role?
-3. How does attrition compare between employees with and without overtime?
-4. What other factors (e.g., job satisfaction, monthly income, years at company) are worth investigating?
+## Key Findings
+- Overall attrition rate: 16.12%
+- Sales department attrition rate: 20.63%
+- Attrition rate among employees working overtime: 30.53%
+- Attrition rate among employees not working overtime: 10.44%
 
-## Project structure
-- `python/hr_eda.py`: data checks, KPI summaries, and two starter charts.
-- `sql/hr_analysis.sql`: SQL Server queries (after importing CSV as `dbo.HR_Employee`).
-- `reports/`: generated CSV summaries and charts after running the Python script.
-- `WA_Fn-UseC_-HR-Employee-Attrition.csv`: source dataset included for local practice.
+## Tools & Technologies
+- Python (Pandas, Matplotlib)
+- SQL Server
+- Microsoft Power BI
 
-## Run Python
-Install Python, then run:
-```bash
-pip install pandas matplotlib
-python python/hr_eda.py
-```
+## Project Workflow
+1. Data quality checks and exploratory data analysis.
+2. SQL queries to analyze employee attrition.
+3. Comparison of attrition across departments and overtime groups.
+4. Power BI dashboard development and data visualization.
 
-## Important interpretation note
-These are descriptive associations, not proof that any factor causes employees to leave.
+## Project Structure
+- `python/hr_eda.py` — Python analysis script.
+- `sql/hr_analysis.sql` — SQL analysis queries.
+- `reports/` — Analysis summaries and visualizations.
+- `WA_Fn-UseC_-HR-Employee-Attrition.csv` — Dataset.
+
+## How to Run
+Install the required libraries:
+
+`pip install pandas matplotlib`
+
+Then run:
+
+`python python/hr_eda.py`
+
+## Conclusion
+The analysis highlights differences in attrition rates across departments and overtime groups. These are descriptive associations and do not establish causation.
+
+## Author
+Mohamed Yasser  
+Data Science Student | Aspiring Data AnalysT
